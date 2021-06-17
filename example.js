@@ -1,4 +1,4 @@
-const pdfReader = require('.');
+const pdfReader = require('./index');
 
 (async () => {
   const pdfPath = './examplePdf.pdf'
