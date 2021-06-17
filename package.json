@@ -24,5 +24,8 @@
     "pdfjs-dist": "^2.8.335",
     "webpack": "^5.39.0",
     "worker-loader": "^3.0.8"
+  },
+  "devDependencies": {
+    "jest": "^27.0.4"
   }
 }
