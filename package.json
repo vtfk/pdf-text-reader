@@ -28,7 +28,11 @@
   "devDependencies": {
     "jest": "^27.0.4"
   },
-
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
   "jest": {
     "testMatch": [
       "**/tests/**/*.[jt]s?(x)",
