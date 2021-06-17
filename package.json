@@ -1,0 +1,28 @@
+{
+  "name": "@vtfk/pdf-text-reader",
+  "version": "1.0.0",
+  "description": "Pdf reader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtfk/pdf-text-reader.git"
+  },
+  "keywords": [
+    "pdf",
+    "reader"
+  ],
+  "author": "jorgtho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vtfk/pdf-text-reader/issues"
+  },
+  "homepage": "https://github.com/vtfk/pdf-text-reader#readme",
+  "dependencies": {
+    "pdfjs-dist": "^2.8.335",
+    "webpack": "^5.39.0",
+    "worker-loader": "^3.0.8"
+  }
+}
