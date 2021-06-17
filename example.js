@@ -1,7 +1,6 @@
-const pdfReader = require('./index');
-
 (async () => {
-  const pdfPath = './examplePdf.pdf'
+  const pdfReader = require('./index')
+  const pdfPath = './data/examplePdf.pdf'
   try {
     const pdfData = await pdfReader(pdfPath)
 

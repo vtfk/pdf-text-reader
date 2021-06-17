@@ -1,6 +1,6 @@
 const { expect } = require('@jest/globals')
 const pdfReader = require('../lib/exportContent')
-const pdfPath = './examplePdf.pdf'
+const pdfPath = './data/examplePdf.pdf'
 
 test('Check that output is object with correct properties', async () => {
   const testObject = await pdfReader(pdfPath)
