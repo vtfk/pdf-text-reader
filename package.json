@@ -1,6 +1,6 @@
 {
   "name": "@vtfk/pdf-text-reader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Pdf reader",
   "main": "index.js",
   "scripts": {
