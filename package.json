@@ -22,7 +22,7 @@
   "homepage": "https://github.com/vtfk/pdf-text-reader#readme",
   "dependencies": {
     "pdfjs-dist": "^2.8.335",
-    "webpack": "^5.39.0",
+    "webpack": "^5.65.0",
     "worker-loader": "^3.0.8"
   },
   "devDependencies": {
