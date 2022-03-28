@@ -2,8 +2,9 @@
 Exctracts metadata, text, and styling from a pdf-file
 
 ## Installation
-`npm i @vtfk/pdf-text-reader`
-
+```bash
+npm i @vtfk/pdf-text-reader
+```
 ## Usage
 ```js
 (async () => {
