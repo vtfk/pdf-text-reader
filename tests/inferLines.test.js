@@ -120,7 +120,7 @@ const pdfContent = {
       ],
       fontName: 'g_d0_f1',
       hasEOL: false,
-      page: 1
+      page: 2
     },
     {
       str: ' ',
@@ -215,20 +215,25 @@ const optionsSetManually = {
 
 test('Check that inferLines gather lines correct when normalizeY is not defined', () => {
   const lines = inferLines(pdfContent, optionsNotDefined.inferLines.normalizeY)
-  expect('300' in lines).toBe(true)
+  expect('300-p1' in lines).toBe(true)
 })
 
 test('Check that inferLines gather lines correct when normalizeY is set to true', () => {
   const lines = inferLines(pdfContent, optionsSetToTrue.inferLines.normalizeY)
-  expect('300' in lines).toBe(true)
+  expect('300-p1' in lines).toBe(true)
 })
 
 test('Check that inferLines gather lines correct when normalizeY is set to false', () => {
   const lines = inferLines(pdfContent, optionsSetToFalse.inferLines.normalizeY)
-  expect('371.586' in lines).toBe(true)
+  expect('371.586-p1' in lines).toBe(true)
+})
+
+test('Check that inferLines gather lines correct when normalizeY is set to false, also on page 2', () => {
+  const lines = inferLines(pdfContent, optionsSetToFalse.inferLines.normalizeY)
+  expect('371.586-p2' in lines).toBe(true)
 })
 
 test('Check that inferLines gather lines correct when normalizeY is set manually', () => {
   const lines = inferLines(pdfContent, optionsSetManually.inferLines.normalizeY)
-  expect(optionsSetManually.inferLines.normalizeY in lines).toBe(true)
+  expect(`${optionsSetManually.inferLines.normalizeY}-p1` in lines).toBe(true)
 })
